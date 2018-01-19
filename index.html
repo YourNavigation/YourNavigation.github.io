@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+	<title>Your Navigation</title>
+	<style type="text/css">
+	body {
+		background-color: #000000;
+		-moz-appearance: none;
+		font-family: Consolas;
+		
+	}
+	td,th {
+		color: #000000;
+		box-shadow: 0 0 0 0;
+		-moz-appearance: none;
+	}
+	a:link {
+		color: inherit;
+		text-decoration: none;
+	}
+	a:visited {
+		color: inherit;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #976750;
+		text-decoration: none;
+	}
+	a:active {
+		color: inherit
+		text-decoration: none;
+	}
+	a {
+		font-family: Consolas;
+		transition: all 0.7s ease 0s;
+	}
+	.main_div{
+	border: solid 1px white;
+	height: 60%;
+	width: 80%;
+	position: fixed;
+	top: 20%;
+	left: 10%;
+	background: url('images/wall.jpg') no-repeat;
+	background-size: cover;
+	}
+	.links{
+	background: transparent;
+	height: 100%;
+	position: absolute;
+	left: 20%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	width: 60% 
+	}
+	.box{
+	color: white;
+	padding: 1% 1% 1% 1%;
+	background: rgba(0,0,0,.7);
+	line-height: 150%;
+	font-size: 17px;
+	width: 33%;
+	transition: all 1s ease 0.1s;
+	}
+	.box:hover{
+	background: rgba(0,0,0,1);
+	}
+	#bottom_text{
+	position: absolute;
+	bottom: -10%;
+	right: 0%;
+	color: #976750;
+	}
+	#bottom_text:hover{
+	color: #ffffff;
+	}
+	</style>
+</head>
+<body>
+	<div class="main_div">
+			<table class="links" cellspacing=10 >
+				<tr height="50%">
+					<td align="center" valign="middle" class="box">
+					<h1>Social</h1>
+						<a href="https://www.vk.com/">Vkontakte</a>
+						<br>
+						<a href="https://2ch.hk/">2ch</a>
+						<br>
+						<a href="https://www.lolifox.org">LoLiFox</a>
+					</td>
+					<td align="center" valign="middle" class="box">
+					<h1> Torrents </h1>
+						<a href="https://www.torrentz.eu/">Torrentz</a>
+						<br>
+						<a href="https://torrentino.top/">Torrentino</a>
+						<br>
+						<a href="https://rutor.org/">Rutor</a>
+					</td>
+					<td align="center" valign="middle" class="box">
+					<h1>Mail</h1>
+						<a href="https://www.protonmail.com/">ProtonMail</a>
+						<br>					
+						<a href="https://www.mail.ru">Mail.Ru</a>
+						<br>
+						<a href="https://10minutemail.net/">10minutMail</a>
+					</td>
+				</tr>
+				<tr height="50%">
+					<td align="center" valign="middle" class="box">
+					<h1>Video</h1>
+						<a href="https://www.youtube.com">YouTube</a>
+						<br>
+						<a href="https://viuly.io/">Viuly</a>
+						<br>
+						<a href="http://hdrezka.ag/">Hdrezka</a>
+					</td>
+					<td align="center" valign="middle" class="box">
+					<h1>Shops</h1>
+						<a href="https://www.aliexpress.com">Aliexpress</a>
+						<br>
+						<a href="https://www.ebay.com/">Ebay</a>
+						<br>
+						<a href="https://www.fasttech.com/">Fasttech</a>
+					</td>
+					<td align="center" valign="middle" class="box">
+					<h1>2ch Resources</h1>
+						<a href="https://www.2ch.hk/s">/s/oft</a>
+						<br>
+						<a href="https://www.2ch.hk/b">/b/ydlo</a>
+						<br>
+						<a href="https://www.2ch.hk/pr">/pr/ogramming</a>
+					</td>
+				</tr>
+			</table>
+			<a href="javascript:change_text();" id="bottom_text">Enable Javascript, FFS!</a>
+			<script>
+				//These are the lines you are looking for
+				var vector = ["No time for love", "...yo!!!",
+								"'How did you make Windows look like that?'", 
+								"Rice me, stupid.",
+								"Remember to check for your anus.",
+								"He's a rice guy ~", 
+								"&#1124; &#1046; &#1769; &#2039; &#2855; &#3403; &#8987; &#9804; &#8554; &#676; &#2315; &#9038;",
+								"I'm in love with a classmate", 
+								"Chill, man ~",
+								"Chek the time, dude",
+								"4 8 15 16 23 42"
+							];
+				function change_text(){
+				document.getElementById("bottom_text").innerHTML = vector[Math.floor(Math.random() * vector.length)];
+				};
+				change_text();
+			</script>
+	</div>
+</body>
+</html>
